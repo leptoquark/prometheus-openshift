@@ -1,3 +1,3 @@
 FROM openshift/prometheus
-
-#COPY prometheus.yml /etc/prometheus/.
+USER root
+COPY prometheus.yml /etc/prometheus/.
