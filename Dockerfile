@@ -2,7 +2,7 @@ FROM openshift/prometheus
 
 COPY prometheus.yml /etc/prometheus/.
 
-USER       nobody
+USER       root
 EXPOSE     9090
 VOLUME     [ "/prometheus" ]
 WORKDIR    /prometheus
