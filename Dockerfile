@@ -9,6 +9,8 @@ RUN ln -s /usr/share/prometheus/console_libraries /usr/share/prometheus/consoles
 RUN mkdir -p /prometheus && \
     chown -R nobody:nobody etc/prometheus /prometheus
 
+COPY prometheus.yml /etc/prometheus/.
+
 USER       nobody
 EXPOSE     9090
 VOLUME     [ "/prometheus" ]
