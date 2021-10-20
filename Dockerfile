@@ -1,4 +1,4 @@
-FROM openshift/prometheus
+FROM prom/prometheus
 USER root
 COPY prometheus.yml /etc/prometheus/.
 
